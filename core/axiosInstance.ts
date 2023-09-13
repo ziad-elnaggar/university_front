@@ -2,7 +2,7 @@ import axios, { AxiosInstance } from 'axios';
 import { toast } from 'react-toastify';
 
 const axiosInstance: AxiosInstance = axios.create({
-	baseURL: 'http://localhost:8000/api/',
+	baseURL: 'https://university-system-blue.vercel.app/api/',
 	// withCredentials: true,
 });
 
