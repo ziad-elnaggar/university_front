@@ -38,9 +38,9 @@ const CourseList = ({ roles }: {roles: Roles}) => {
                       <button className="btn btn-primary btn-sm mx-1" onClick={() => handleEdit(el)}>Edit</button>}
                     {roles.canDelete &&
                       <button className="btn btn-danger btn-sm mx-1" onClick={() => handleDelete(el.id)}>Delete</button>}
-                    {roles.canShowStudents &&
-                      <button className="btn btn-secondary btn-sm mx-1" onClick={() => handleAddSchedule(el.id)}>Add to Schedule</button>}
                     {roles.canSchedule &&
+                      <button className="btn btn-secondary btn-sm mx-1" onClick={() => handleAddSchedule(el.id)}>Add to Schedule</button>}
+                    {roles.canShowStudents &&
                       <button className="btn btn-alert btn-sm mx-1" onClick={() => handleShowStudents(el)}>Show Students</button>}
                 </>
             })

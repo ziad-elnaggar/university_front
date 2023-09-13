@@ -13,7 +13,6 @@ const AdminDashboard = () => {
   })
   return (
     <>
-      <div>AdminDashboard</div>
       <CourseList roles={{canAdd: true, canEdit: true, canDelete: true, canShowStudents: true, canSchedule: false}} />
     </>
   )
